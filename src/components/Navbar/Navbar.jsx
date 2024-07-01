@@ -52,7 +52,7 @@ if(e){
       ref={navRef}>
       <div className="flex flex-row items-center w-full max-h-12">
       <div className="basis-1/6 h-full flex flex-row items-center">
-      <Link to={"/"} onClick={()=>{menuItemClickHandler(false)}} ><img src={logo} alt="B/D" className="drop-shadow-c-gray scale-110 mx-5 mr-8  w-8" />
+      <Link to={"/"} onClick={()=>{menuItemClickHandler(false)}} ><img src={logo} alt="B/D" className=" scale-110 mx-5 mr-8  w-8" />
       </Link>
         </div>
 
