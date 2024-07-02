@@ -5,6 +5,7 @@ import Skills from "./pages/Skills";
 import Works from "./pages/Works";
 import Navbar from "./components/Navbar/Navbar";
 import Social from "./components/Social/Social";
+import DraggableImage from "./components/DragableItem";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/resume" element={<Resume />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/works" element={<Works />} />
+            <Route path="/pdf" element={<DraggableImage/>} />
           </Routes>
         </div>
       </Router>
