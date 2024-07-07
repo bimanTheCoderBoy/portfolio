@@ -9,6 +9,7 @@ export default function PDFViewer() {
         documentId: "6b6772bb-4de7-4c57-9573-fbcd37f441fc",
         darkMode: false,
         disableToolbar: true,
+        
       },
       viewer.current
     ).then((instance) => {});

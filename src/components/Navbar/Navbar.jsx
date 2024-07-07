@@ -45,7 +45,7 @@ export default function Navbar() {
   };
   return (
     <div
-      className="w-full px-5 max-md:h-12 h-14 bg-white flex flex-row items-center  fixed top-0 justify-between"
+      className="w-full px-5 max-md:h-12 h-14  flex flex-row items-center  fixed top-0 justify-between"
       ref={navRef}>
       <div className="flex flex-row items-center w-full max-h-12">
         <div className="basis-1/6 h-full flex flex-row items-center">
@@ -87,7 +87,7 @@ export default function Navbar() {
             onClick={menuItemClickHandler}
             className="menuu  flex flex-row items-center mx-2 cursor-pointer">
             <MdOutlineWork className="scale-125 " />
-            &nbsp;<span className="text-[#6a6b6ddb] ">Works</span>
+            &nbsp;<span className="text-[#6a6b6ddb] ">Works/{">"}</span>
           </span>
         </Link>
         <Link to={"/skills"}>
@@ -95,7 +95,7 @@ export default function Navbar() {
             onClick={menuItemClickHandler}
             className="menuu flex flex-row items-center mx-2 cursor-pointer">
             <FaFileCode className="scale-110 " />
-            &nbsp;<span className="text-[#6a6b6ddb] ">Skills</span>
+            &nbsp;<span className="text-[#6a6b6ddb] ">Skills/{">"}</span>
           </span>
         </Link>
         <Link to={"/resume"}>
@@ -103,7 +103,7 @@ export default function Navbar() {
             onClick={menuItemClickHandler}
             className="menuu flex flex-row items-center mx-2 cursor-pointer">
             <IoIosPerson className="scale-150 " />
-            &nbsp;<span className="text-[#6a6b6ddb] ">Resume</span>
+            &nbsp;<span className="text-[#6a6b6ddb] ">Resume/{">"}</span>
           </span>
         </Link>
         <Link to={"/self"}>
@@ -111,7 +111,7 @@ export default function Navbar() {
             onClick={menuItemClickHandler}
             className="menuu flex flex-row items-center mx-2 cursor-pointer">
             <PiNotebookFill className="scale-125 " />
-            &nbsp;<span className="text-[#6a6b6ddb] ">Self</span>
+            &nbsp;<span className="text-[#6a6b6ddb] ">Self/{">"}</span>
           </span>
         </Link>
       </div>
