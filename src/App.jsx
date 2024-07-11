@@ -13,9 +13,13 @@ import Loader from "./components/Loader";
 
 function App() {
   const [mainLoading, setMainLoading] = useState(true);
-  // window.addEventListener("load",()=>setMainLoading(false))
   setTimeout(()=>{
-    setMainLoading(false)
+    
+    window.addEventListener("load",()=>setMainLoading(false))
+    setTimeout(()=>{
+      setMainLoading(false)
+    },2000)
+    
   },4000)
 
   return (
