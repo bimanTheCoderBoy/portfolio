@@ -1,8 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
-
+import React, { useContext, useEffect, useRef, useState } from 'react';
+import { CursorContext } from '../../Context/CursorContext'
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
     const pointerRef=useRef()
+
+    const {hoveredValue}=useContext(CursorContext);
+
+
   useEffect(() => {
     const handleMouseMove = (event) => {
       setPosition({ x: event.clientX, y: event.clientY });
@@ -29,7 +33,7 @@ const CustomCursor = () => {
 
   return (
     <div
-      className="fixed flex flex-row justify-center items-center pointer-events-none z-50 w-8 h-8 rounded-full border-slate-500 border-4 bg-transparent transform -translate-x-1/2 -translate-y-1/2 duration-[.0s] overflow-hidden"
+      className={`fixed flex flex-row justify-center items-center pointer-events-none z-50 w-${hoveredValue} h-${hoveredValue}  min-h-8 rounded-full border-slate-500 border-4 bg-transparent transform -translate-x-1/2 -translate-y-1/2 duration-[.0s] overflow-hidden`}
       style={{ top: `${position.y}px`, left: `${position.x}px` }
     }
     ref={pointerRef}

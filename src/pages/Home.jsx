@@ -19,6 +19,7 @@ import javaIcon from "../assets/java.png";
 import jsIcon from "../assets/js.png";
 import dsaIcon from "../assets/dsa.png";
 import { rotate } from "three/examples/jsm/nodes/Nodes.js";
+import ClipLoader from "react-spinners/ClipLoader";
 export default function Home() {
   return (
     <>
@@ -28,7 +29,9 @@ export default function Home() {
         </div>
 
         <div className="max-lg:hidden lg:basis-[60%] mt-14">
-          <Avtar />
+        
+         <Avtar />
+         
           <div className="absolute   w-[53%] bottom-0 top-16 ">
             <div className="absolute  w-full top-0 bottom-0  overflow-hidden">
               <img

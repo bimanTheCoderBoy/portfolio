@@ -8,6 +8,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import logo from "./../../assets/folio.png";
 import { Link } from "react-router-dom";
+
+
+import CursorEffect from "../Cursor/CursorEffect";
 export default function Navbar() {
   const menuRef = useRef();
   const navRef = useRef();
@@ -54,10 +57,10 @@ export default function Navbar() {
             onClick={() => {
               menuItemClickHandler(false);
             }}>
-            <img src={logo} alt="B/D" className=" scale-110 mx-5 mr-8  w-8" />
+            <CursorEffect><img src={logo} alt="B/D" className=" scale-110 mx-5 mr-8  w-8" /></CursorEffect>
           </Link>
         </div>
-
+        
         <div className="cursor-pointer basis-1/4  text-[#57585A]  h-full flex  flex-row items-center font-sans font-semibold text-base p-4">
           <Link to={"mailto:daskumarbiman2020@gmail.com"}>
             <span className="flex flex-row items-center">
@@ -83,36 +86,44 @@ export default function Navbar() {
         ref={menuRef}>
           
         <Link to={"/works"}>
+        <CursorEffect>
           <span
             onClick={menuItemClickHandler}
             className="menuu  flex flex-row items-center mx-2 cursor-pointer">
             <MdOutlineWork className="scale-125 " />
             &nbsp;<span className="text-[#6a6b6ddb] ">Works/{">"}</span>
           </span>
+          </CursorEffect>
         </Link>
         <Link to={"/skills"}>
+        <CursorEffect>
           <span
             onClick={menuItemClickHandler}
             className="menuu flex flex-row items-center mx-2 cursor-pointer">
             <FaFileCode className="scale-110 " />
             &nbsp;<span className="text-[#6a6b6ddb] ">Skills/{">"}</span>
           </span>
+          </CursorEffect>
         </Link>
         <Link to={"/resume"}>
+        <CursorEffect>
           <span
             onClick={menuItemClickHandler}
             className="menuu flex flex-row items-center mx-2 cursor-pointer">
             <IoIosPerson className="scale-150 " />
             &nbsp;<span className="text-[#6a6b6ddb] ">Resume/{">"}</span>
           </span>
+          </CursorEffect>
         </Link>
         <Link to={"/self"}>
+        <CursorEffect>
           <span
             onClick={menuItemClickHandler}
             className="menuu flex flex-row items-center mx-2 cursor-pointer">
             <PiNotebookFill className="scale-125 " />
             &nbsp;<span className="text-[#6a6b6ddb] ">Self/{">"}</span>
           </span>
+          </CursorEffect>
         </Link>
       </div>
     </div>

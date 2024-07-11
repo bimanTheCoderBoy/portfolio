@@ -11,6 +11,7 @@ export function AvtarModel(props) {
   const { nodes, materials } = useGLTF('models/Avtar.glb')
   const group = useRef();
   const {mouse}=props;
+  
   useFrame((state) => {
     // group.current.getObjectByName("Head").lookAt(state.camera.position())
     if (group.current) {
@@ -25,6 +26,9 @@ export function AvtarModel(props) {
       }
     }
   });
+
+
+  
   return (
     <group {...props} ref={group}  dispose={null}  scale={[1,1,1]}>
       <primitive object={nodes.Hips} />

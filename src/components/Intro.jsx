@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import intro from "../assets/intro.png"
+import CursorEffect from "../components/Cursor/CursorEffect"
 
 export default function Intro() {
   return (
@@ -11,17 +12,21 @@ export default function Intro() {
       </div>
       </div>
       <div className="flex flex-row">
+      <CursorEffect>
         <div className="basis-[56%] flex flex-row justify-end font-kanit font-[700] text-6xl text-[#57585A] leading-[2.8rem] ">
           Biman
           <br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Das
         </div>
+        </CursorEffect>
       </div>
 
       <div className="flex flex-row">
+      <CursorEffect>
         <div className="basis-10/12 flex flex-row font-kanit font-[600]  text-lg justify-center text-[#6a6b6dca] leading-[2.5rem] ">
           Software Developer
         </div>
+        </CursorEffect>
       </div>
 
       <div className="flex flex-row mx-10 md:px-5 mt-6">
