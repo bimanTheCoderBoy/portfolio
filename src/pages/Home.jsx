@@ -32,7 +32,7 @@ export default function Home() {
         
          <Avtar />
          
-          <div className="absolute   w-[53%] bottom-0 top-16 ">
+          <div className="absolute   w-[53%] bottom-0 top-16 select-none">
             <div className="absolute  w-full top-0 bottom-0  overflow-hidden">
               <img
                 src={AvtarEffect}

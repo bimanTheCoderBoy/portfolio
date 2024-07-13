@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import CloudPdfViewer from "@cloudpdf/viewer";
 
-export default function PDFViewer() {
+export default function Test() {
   const viewer = useRef(null);
   useEffect(() => {
     CloudPdfViewer(

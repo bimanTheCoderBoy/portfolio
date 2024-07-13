@@ -10,15 +10,16 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CustomCursor from "./components/Cursor/CursorPointer";
 import { useState } from "react";
 import Loader from "./components/Loader";
+import Test from "./components/Test";
 
 function App() {
-  const [mainLoading, setMainLoading] = useState(true);
-  setTimeout(()=>{
+  const [mainLoading, setMainLoading] = useState(false);
+  setInterval(()=>{
     
     window.addEventListener("load",()=>setMainLoading(false))
     setTimeout(()=>{
       setMainLoading(false)
-    },2000)
+    },1000)
     
   },4000)
 
@@ -40,7 +41,7 @@ function App() {
               <Route path="/resume" element={<Resume />} />
               <Route path="/skills" element={<Skills />} />
               <Route path="/works" element={<Works />} />
-              {/* <Route path="/test" element={<CursorWraper />} /> */}
+              <Route path="/test" element={<Test/>} />
             </Routes>
           </div>
         </Router>
