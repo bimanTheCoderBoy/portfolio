@@ -33,8 +33,8 @@ const CustomCursor = () => {
 
   return (
     <div
-      className={`fixed flex flex-row justify-center items-center pointer-events-none z-50 w-${hoveredValue} h-${hoveredValue}  min-h-8 rounded-full border-slate-500 border-4 bg-transparent transform -translate-x-1/2 -translate-y-1/2 duration-[.0s] overflow-hidden z-[10000]`}
-      style={{ top: `${position.y}px`, left: `${position.x}px` }
+      className={`fixed flex flex-row justify-center items-center pointer-events-none  h-8  rounded-full border-slate-500 border-4 bg-transparent transform -translate-x-1/2 -translate-y-1/2 duration-[.0s] overflow-hidden z-[10000]`}
+      style={{ top: `${position.y}px`, left: `${position.x}px`, height:`${hoveredValue*.25}rem` , width:`${hoveredValue*.25}rem` }
     }
     ref={pointerRef}
     >

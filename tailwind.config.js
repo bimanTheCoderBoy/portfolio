@@ -25,6 +25,8 @@ export default {
         "lightg":"#6a6b6dca",
         "deepg":"#57585A",
         "th-black":"#2e2e2e"
+      },boxShadow:{
+        'c-gray': '0 0px 30px #6a6b6dca',
       }
     },
   },
