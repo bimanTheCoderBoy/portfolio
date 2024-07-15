@@ -3,9 +3,12 @@ import { Tilt } from 'react-tilt'
 export default function Works() {
   return (
     <>
-    <div className='flex flex-col w-full'>
+    <div className='flex flex-col w-full  max-md:mt-10'>
     <div className='w-full  h-32 flex flex-col justify-center items-center   relative md:right-10'>
-        <h2 className='text-5xl font-[600] font-kanit text-deepg'>{"<"}Works<span className='text-yellow-500'>/</span>{">"}</h2>
+    <h2 className="text-7xl font-[600] font-playfr text-deepg flex items-center">
+          {"<"}<span className="text-5xl font-kanit">Works</span><span className="text-yellow-500">/</span>
+          {">"}
+        </h2>
         <p className='text-center mt-6 text-lg text-deepg '>Here you will find some of the personal and clients projects that I created with each project <br/>containing its own case study</p>
     </div>
     <div className='w-full flex flex-col mt-16 justify-center'>

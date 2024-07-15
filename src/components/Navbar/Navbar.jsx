@@ -15,14 +15,18 @@ export default function Navbar() {
   const menuRef = useRef();
   const navRef = useRef();
   const [menuState, setMenuState] = useState(true);
+
+
+
   const menuHandler = (e) => {
     console.log(e.target);
     navRef.current.classList.toggle("flex-col");
     menuRef.current.classList.toggle("max-md:hidden");
     menuRef.current.classList.toggle("justify-around");
-    menuRef.current.classList.toggle("border-t-4");
-    menuRef.current.classList.toggle("py-2");
-    // menuRef.current.classList.toggle("h-12")
+    // menuRef.current.classList.toggle("items-center");
+    menuRef.current.classList.toggle("border-b-4");
+    menuRef.current.classList.toggle("py-4");
+  
 
     setMenuState((prev) => !prev);
   };
@@ -48,7 +52,7 @@ export default function Navbar() {
   };
   return (
     <div
-      className="w-full px-5 max-md:h-12 h-14  flex flex-row items-center  fixed top-0 justify-between"
+      className="w-full md:px-5  h-14  flex flex-row items-center  fixed top-0 justify-between z-50 max-md:mb-5 max-md:border-b-4 max-md:bg-[#F1F3F5] "
       ref={navRef}>
       <div className="flex flex-row items-center w-full max-h-12">
         <div className="basis-1/6 h-full flex flex-row items-center">
@@ -82,7 +86,7 @@ export default function Navbar() {
         </div>
       </div>
       <div
-        className="max-md:hidden basis-1/2 h-full w-full flex flex-row items-center text-[#57585A] text-sm font-sans font-medium justify-end px-5"
+        className="max-md:hidden basis-1/2 h-full w-full flex flex-row items-center text-[#57585A] text-sm font-sans font-medium justify-end md:px-5 max-md:bg-[#F1F3F5]"
         ref={menuRef}>
           
         <Link to={"/works"}>
