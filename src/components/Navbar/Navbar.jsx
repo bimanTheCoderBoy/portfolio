@@ -93,7 +93,7 @@ export default function Navbar() {
         <CursorEffect>
           <span
             onClick={menuItemClickHandler}
-            className="menuu  flex flex-row items-center mx-2 cursor-pointer">
+            className="menuu  flex flex-row items-center mx-2 cursor-pointer hover:scale-110 hover:font-bold duration-200">
             <MdOutlineWork className="scale-125 " />
             &nbsp;<span className="text-[#6a6b6ddb] ">Works/{">"}</span>
           </span>
@@ -103,7 +103,7 @@ export default function Navbar() {
         <CursorEffect>
           <span
             onClick={menuItemClickHandler}
-            className="menuu flex flex-row items-center mx-2 cursor-pointer">
+            className="menuu flex flex-row items-center mx-2 cursor-pointer hover:scale-110 hover:font-bold duration-200">
             <FaFileCode className="scale-110 " />
             &nbsp;<span className="text-[#6a6b6ddb] ">Skills/{">"}</span>
           </span>
@@ -113,7 +113,7 @@ export default function Navbar() {
         <CursorEffect>
           <span
             onClick={menuItemClickHandler}
-            className="menuu flex flex-row items-center mx-2 cursor-pointer">
+            className="menuu flex flex-row items-center mx-2 cursor-pointer hover:scale-110  hover:font-bold duration-200">
             <IoIosPerson className="scale-150 " />
             &nbsp;<span className="text-[#6a6b6ddb] ">Resume/{">"}</span>
           </span>
@@ -123,7 +123,7 @@ export default function Navbar() {
         <CursorEffect>
           <span
             onClick={menuItemClickHandler}
-            className="menuu flex flex-row items-center mx-2 cursor-pointer">
+            className="menuu flex flex-row items-center mx-2 cursor-pointer hover:scale-110 hover:font-bold duration-200">
             <PiNotebookFill className="scale-125 " />
             &nbsp;<span className="text-[#6a6b6ddb] ">Self/{">"}</span>
           </span>

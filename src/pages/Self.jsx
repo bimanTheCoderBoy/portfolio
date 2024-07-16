@@ -1,6 +1,15 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { coy as test } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { oneLight as test } from "react-syntax-highlighter/dist/esm/styles/prism";
+import reactIcon from "../assets/react.png";
+import mongoIcon from "../assets/mongo.png";
+import sqlIcon from "../assets/sql.png";
+import gitIcon from "../assets/git.png";
+import nodeIcon from "../assets/node.png";
+import javaIcon from "../assets/java.png";
+import jsIcon from "../assets/js.png";
+import dsaIcon from "../assets/dsa.png";
+
 
 export default function Self() {
   const codeString = `class BimanDas{
@@ -42,55 +51,77 @@ export default function Self() {
 
 }
   `;
-  const ADDED = [1, 10,18,30];
-  const REMOVED = [6,14,23,33];
+  const ADDED = [1, 10, 18, 30];
+  const REMOVED = [6, 14, 23, 33];
+
+
+ 
   return (
     // <div>
     <>
-    <div className="flex flex-col w-full max-md:mt-5">
-      <div className="w-full  flex flex-col justify-center items-center  relative md:right-10 ">
-        <h2 className="text-7xl font-[600] font-playfr text-deepg flex items-center">
-          {"<"}
-          <span className="text-5xl font-kanit">Self</span>
-          <span className="text-yellow-500">/</span>
-          {">"}
-        </h2>
+      <div className="flex flex-col w-full max-md:mt-5 mb-14">
+        <div className="w-full  flex flex-col justify-center items-center  relative md:right-10 ">
+          <h2 className="text-7xl font-[600] font-playfr text-deepg flex items-center">
+            {"<"}
+            <span className="text-5xl font-kanit">Self</span>
+            <span className="text-yellow-500">/</span>
+            {">"}
+          </h2>
+        </div>
+
+        {/* //extra added absolute */}
+        <div className="w-full h-full max-lg:hidden">
+          <img src={mongoIcon} alt=""  className="w-[18%] absolute top-[7%] left-[70%]"/>
+          <img src={reactIcon} alt=""  className="w-[18%] absolute bottom-[-60%] left-[65%]"/>
+          <img src={nodeIcon} alt=""  className="w-[18%] absolute top-[80%] left-[30%]"/>
+        </div >
+        
+        <div className=" bg-[rgba(0,0,0,.05)] lg:mr-8 rounded-lg backdrop-blur-sm mx-5">
+        <SyntaxHighlighter
+          language="javascript"
+          style={test}
+          customStyle={{
+            backgroundColor: "rgba(0,0,0,0)",
+            // position:"absolute"
+            // marginLeft: "-1.2rem",
+            fontSize: "1.1rem",
+            fontWeight:"500",
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.15)'
+            // width:"100vw"
+          }}
+          showLineNumbers={true}
+          wrapLongLines={true}
+          wrapLines={true}
+          codeTagProps={{
+            backgroundColor: "black",
+            width: "100px",
+            hight: "100px",
+          }}
+          lineNumberStyle={{
+            // backgroundColor:"red",
+            borderRight: "3px solid #6a6b6dca",
+            marginRight: "1rem",
+            paddingRight: "1rem",
+          }}
+          lineProps={(lineNumber) => {
+            let style = {
+              display: "block",
+              fontFamily: "JetBrains Mono, monospace",
+              
+            };
+            if (ADDED.includes(lineNumber)) {
+              // style.backgroundColor = "#dbffdb";
+              //  style.fontFamily='Roboto, sans-serif'
+            } else if (REMOVED.includes(lineNumber)) {
+              // style.backgroundColor = "#ffecec";
+            }
+            return { style };
+          }}>
+          {codeString}
+        </SyntaxHighlighter>
+        </div>
+       
       </div>
-      <SyntaxHighlighter
-        language="javascript"
-        style={test}
-        customStyle={{
-          backgroundColor: "rgba(0,0,0,0)",
-          // marginLeft: "-1.2rem",
-          fontFamily: 'Roboto, sans-serif',
-    fontSize: '20px',
-    color: '#333',
-    padding: '20px',
-          // width:"100vw"
-        }}
-        showLineNumbers={true}
-        wrapLongLines={true}
-        wrapLines={true}
-        codeTagProps={ { backgroundColor: 'black',width:"100px", hight:"100px" }}
-        lineNumberStyle={{
-          // backgroundColor:"red",
-          borderRight:"3px solid #6a6b6dca",
-          marginRight:"1rem",
-          paddingRight:"1rem"
-        }}
-        lineProps={lineNumber => {
-          let style = { display: 'block' };
-          if (ADDED.includes(lineNumber)) {
-            style.backgroundColor = '#dbffdb';
-          } else if (REMOVED.includes(lineNumber)) {
-            style.backgroundColor = '#ffecec';
-          }
-          return { style};
-        }}
-        >
-        {codeString}
-      </SyntaxHighlighter>
-      </div>
-      </>
+    </>
   );
 }
