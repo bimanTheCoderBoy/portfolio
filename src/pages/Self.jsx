@@ -29,18 +29,6 @@ export default function Self() {
         ]
     }
 
-    skills(){
-        return [
-            'C' , 'C++' , 'Core Java' , 'HTML' , 'CSS' , 'JavaScript' ,
-            'Tailwind CSS' , 'Adv JavaScript' , 'Bootstrap' , 'React.js' ,
-            'Node.js' , 'Express.js' , 'Next.js' , 'SQL' , 'MongoDb' , 'Mongoose' ,
-            'DSA' , 'JDBC' , 'Shell Script' , 'Git' , 'GitHub' , 'GitLab' , 'Postman' ,
-            'Firebase' , 'Cloudinary' , 'Developing rest APIs' , 'OAuth 2.0' , 'JWT' ,
-            'GraphQL' , 'Docker' , 'GitHub Actions' , 'Digital Ocean Functions' ,
-            'Servlet' , 'Jsp' , 'Spring' , 'Spring Boot' , 'Flutter'
-        ]
-    }
-
     achievements(){
         return [
             'Selected for College level E-commerce Business Project' ,
@@ -72,11 +60,11 @@ export default function Self() {
         {/* //extra added absolute */}
         <div className="w-full h-full max-lg:hidden">
           <img src={mongoIcon} alt=""  className="w-[18%] absolute top-[7%] left-[70%]"/>
-          <img src={reactIcon} alt=""  className="w-[18%] absolute bottom-[-60%] left-[65%]"/>
-          <img src={nodeIcon} alt=""  className="w-[18%] absolute top-[80%] left-[30%]"/>
+          <img src={reactIcon} alt=""  className="w-[18%] absolute bottom-[-40%] left-[70%]"/>
+          <img src={nodeIcon} alt=""  className="w-[18%] absolute top-[82%] left-[40%]"/>
         </div >
         
-        <div className=" bg-[rgba(0,0,0,.05)] lg:mr-8 rounded-lg backdrop-blur-sm mx-5">
+        <div className=" bg-[rgba(0,0,0,.05)] lg:mr-8 rounded-lg backdrop-blur-sm mx-5 mt-2 min-h-[900px]">
         <SyntaxHighlighter
           language="javascript"
           style={test}
