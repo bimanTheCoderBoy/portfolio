@@ -62,7 +62,10 @@ export default function Self() {
         customStyle={{
           backgroundColor: "rgba(0,0,0,0)",
           // marginLeft: "-1.2rem",
-          fontSize: "1.2rem",
+          fontFamily: 'Roboto, sans-serif',
+    fontSize: '20px',
+    color: '#333',
+    padding: '20px',
           // width:"100vw"
         }}
         showLineNumbers={true}

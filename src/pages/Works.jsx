@@ -6,14 +6,21 @@ import styled from "styled-components";
 
 const ImgContainer = styled.div`
    perspective: 800px;
-   width: 40rem;
-   height: 25rem;
+   @media(min-width: 1200px){
+   width: 37rem;
+   }
+   
+  //  height: 25rem;
+  //  perspective-origin: left center;
 `;
 const Img=styled.img`
-  transform:rotateY(20deg);
+@media(min-width: 1000px){
+margin-right:1rem;
+  transform:rotateX(4deg) rotateY(20deg) rotateZ(-3deg);
   &:hover{
-  transform:rotateY(-20deg);
+ transform:rotateX(4deg) rotateY(-20deg) rotateZ(2deg) translateX(-.5rem);
   }
+}
 `
 
 
@@ -24,7 +31,7 @@ export default function Works() {
       <div className="flex flex-col w-full  max-md:mt-10">
         <div className="w-full  h-32 flex flex-col justify-center items-center   relative md:right-10">
           <h2 className="text-7xl font-[600] font-playfr text-deepg flex items-center">
-            {"<"}
+            {"<"} 
             <span className="text-5xl font-kanit">Works</span>
             <span className="text-yellow-500">/</span>
             {">"}
@@ -37,18 +44,18 @@ export default function Works() {
         </div>
         <div className="w-full flex flex-col mt-16 justify-center ">
           {
-            <div className="flex flex-row  p-8 mx-10 rounded-lg max-lg:flex-wrap max-lg:justify-center justify-around md:pr-[5rem]">
-              <div className="flex flex-row justify-center items-center">
+            <div className="flex flex-row  p-8 mx-10 rounded-lg max-lg:flex-wrap max-lg:justify-center justify-center md:pr-[5rem]">
+              <div className="flex flex-row justify-center items-center ">
                 <ImgContainer>
                   <Img 
                     src={work}
-                    className="w-[40rem] shadow-c-gray rounded-lg transition-all duration-500"
+                    className="w-[32rem] lg:hover:w-[40rem] lg:shadow-c-img-card-gray lg:hover:shadow-c-img-card-gray-hover max-lg:shadow-c-img-card rounded-lg transition-all duration-500 "
                     alt="project pic"
                   />
                 
                </ImgContainer>
               </div>
-              <div className="pl-12 pt-8">
+              <div className="pl-12 pt-8 ">
                 <h2 className="font-extrabold font-roboto text-3xl text-[#2e2e2e] drop-shadow-lg mb-7">
                   Dopefolio
                 </h2>
