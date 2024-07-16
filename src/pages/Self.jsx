@@ -60,8 +60,8 @@ export default function Self() {
         {/* //extra added absolute */}
         <div className="w-full h-full max-lg:hidden">
           <img src={mongoIcon} alt=""  className="w-[18%] absolute top-[7%] left-[70%]"/>
-          <img src={reactIcon} alt=""  className="w-[18%] absolute bottom-[-40%] left-[70%]"/>
-          <img src={nodeIcon} alt=""  className="w-[18%] absolute top-[82%] left-[40%]"/>
+          <img src={reactIcon} alt=""  className="w-[18%] absolute bottom-[-40%] left-[72%]"/>
+          <img src={nodeIcon} alt=""  className="w-[18%] absolute top-[82%] left-[42%]"/>
         </div >
         
         <div className=" bg-[rgba(0,0,0,.05)] lg:mr-8 rounded-lg backdrop-blur-sm mx-5 mt-2 min-h-[900px]">
@@ -98,10 +98,10 @@ export default function Self() {
               
             };
             if (ADDED.includes(lineNumber)) {
-              // style.backgroundColor = "#dbffdb";
+              // style.backgroundColor = "rgba(0, 0, 0, 0.05)";
               //  style.fontFamily='Roboto, sans-serif'
             } else if (REMOVED.includes(lineNumber)) {
-              // style.backgroundColor = "#ffecec";
+              // style.backgroundColor = "rgba(0, 0, 0, 0.15)";
             }
             return { style };
           }}>
