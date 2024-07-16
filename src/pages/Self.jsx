@@ -14,6 +14,10 @@ import dsaIcon from "../assets/dsa.png";
 export default function Self() {
   const codeString = `class BimanDas{
 
+    // I am constantly innovating and integrating new technologies to deliver top-notch solutions.
+    // I thrive on adapting to new challenges, using them as stepping stones to expand my expertise and achieve success.
+    // I value teamwork and collaboration, and I'm eager to support my colleagues in achieving our goals & celebrating our collective success.
+
     constructor(){
         this.name = 'Biman Das';
         this.dob = '16-05-2003';
@@ -31,9 +35,13 @@ export default function Self() {
 
     achievements(){
         return [
-            'Selected for College level E-commerce Business Project' ,
-            'Solved 500+ coding problems in different coding platforms' ,
-            'Best UI Award in Hackathon'
+            'Selected for College level E-commerce Business Project' , 'Solved 500+ coding problems in different coding platforms' , 'Best UI Award in Hackathon'
+        ]
+    }
+
+    languagesKnown(){
+        return [
+            'English' , 'Hindi' , 'Bengali'
         ]
     }
 
@@ -64,7 +72,7 @@ export default function Self() {
           <img src={nodeIcon} alt=""  className="w-[18%] absolute top-[82%] left-[42%]"/>
         </div >
         
-        <div className=" bg-[rgba(0,0,0,.05)] lg:mr-8 rounded-lg backdrop-blur-sm mx-5 mt-2 min-h-[900px]">
+        <div className=" bg-[rgba(0,0,0,.05)] lg:mx-8 rounded-lg backdrop-blur-sm mx-5 mt-2 mb-10">
         <SyntaxHighlighter
           language="javascript"
           style={test}
@@ -72,14 +80,14 @@ export default function Self() {
             backgroundColor: "rgba(0,0,0,0)",
             // position:"absolute"
             // marginLeft: "-1.2rem",
-            fontSize: "1.1rem",
+            fontSize: "1.15rem",
             fontWeight:"500",
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.15)'
             // width:"100vw"
           }}
           showLineNumbers={true}
-          wrapLongLines={true}
-          wrapLines={true}
+          // wrapLongLines={true}
+          // wrapLines={true}
           codeTagProps={{
             backgroundColor: "black",
             width: "100px",

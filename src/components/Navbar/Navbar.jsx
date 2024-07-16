@@ -22,8 +22,8 @@ export default function Navbar() {
     shadow: "none",
     backdrop: "none",
     height:14,
-    textColorDeep:'#57585A',
-    textColorLight:'#6a6b6ddb'
+    textColorDeep:"#57585A",
+    textColorLight:"#6a6b6ddb"
   };
   const navTwoData = {
     top: 8,
@@ -32,8 +32,8 @@ export default function Navbar() {
     shadow: "xl",
     backdrop: "sm",
     height:16,
-    textColorDeep:'white',
-    textColorLight:'white'
+    textColorDeep:"#F1F3F5",
+    textColorLight:"#F1F3F5" 
   };
   const [defNav, setDefNav] = useState(true);
   const [navTransform, setNavTransform] = useState(navOneData);
