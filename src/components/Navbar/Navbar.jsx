@@ -32,10 +32,10 @@ export default function Navbar() {
     shadow: "xl",
     backdrop: "sm",
     height:16,
-    textColorDeep:'',
-    textColorLight:''
+    textColorDeep:'white',
+    textColorLight:'white'
   };
-  const [defNav, setDefNav] = useState(false);
+  const [defNav, setDefNav] = useState(true);
   const [navTransform, setNavTransform] = useState(navOneData);
 
   useEffect(() => {
@@ -99,12 +99,12 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className="cursor-pointer basis-1/4  text-[${}]  h-full flex  flex-row items-center font-sans font-semibold text-base p-4">
+        <div className={`cursor-pointer basis-1/4  text-[${navTransform.textColorDeep}]  h-full flex  flex-row items-center font-sans font-semibold text-base p-4`}>
           <Link to={"mailto:daskumarbiman2020@gmail.com"}>
             <span className="flex flex-row items-center">
               <IoIosMail className="scale-150 " />
               &nbsp;&nbsp;
-              <span className="text-[#6a6b6ddb] ">
+              <span className={`text-[${navTransform.textColorLight}]`}>
                 daskumarbiman2020gmail.com
               </span>
             </span>
