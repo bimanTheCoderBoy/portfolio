@@ -29,7 +29,7 @@ const ImgRight=styled.img`
 margin-right:1rem;
   transform:rotateX(4deg) rotateY(-29deg) rotateZ(2deg) translateY(-2rem);
   &:hover{
- transform:rotateX(4deg) rotateY(30deg) rotateZ(-2deg) translateX(.5rem) translateY(1.5rem);
+ transform:rotateX(4deg) rotateY(30deg) rotateZ(-2deg) translateX(-1rem) translateY(1.5rem);
   }
 }
 `
@@ -154,7 +154,7 @@ export default function Works() {
                     </div>
                   </Link>
                 </div>
-                <div className="flex flex-row justify-center items-center lg:translate-x-16">
+                <div className="flex flex-row justify-center items-center lg:translate-x-28">
                   <ImgContainer>
                     <ImgRight
                       src={work}
