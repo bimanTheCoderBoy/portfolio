@@ -71,7 +71,9 @@ export default function Navbar() {
   };
 
   const menuItemClickHandler = (e) => {
+   if(window.innerWidth<600){
     menuHandler();
+   }
     // setMenuState((prev) => !prev);
 
     let items = document.getElementsByClassName("menuu");
