@@ -37,7 +37,8 @@ export default function Works() {
             {">"}
           </h2>
           <p className="text-center mt-6 text-lg text-deepg">
-          Here you will find various personal and client projects, each with its own detailed case study.
+          Here you will find various personal and client projects,
+                 each with its own detailed case study.
           </p>
         </div>
         <div className="w-full flex flex-col mt-16 justify-center ">

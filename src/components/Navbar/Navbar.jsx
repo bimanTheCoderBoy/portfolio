@@ -49,6 +49,7 @@ export default function Navbar() {
 
   document.addEventListener('scroll',()=>{
     if(window.scrollY>25){
+      window.scrollTo=0
       setDefNav(false)
     }else{
       setDefNav(true)
