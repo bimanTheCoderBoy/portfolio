@@ -16,9 +16,9 @@ const ImgContainer = styled.div`
 const Img=styled.img`
 @media(min-width: 1000px){
 margin-right:1rem;
-  transform:rotateX(4deg) rotateY(20deg) rotateZ(-3deg);
+  transform:rotateX(4deg) rotateY(27deg) rotateZ(-3deg);
   &:hover{
- transform:rotateX(4deg) rotateY(-20deg) rotateZ(2deg) translateX(-.5rem);
+ transform:rotateX(4deg) rotateY(-30deg) rotateZ(2deg) translateX(-.5rem);
   }
 }
 `
