@@ -11,7 +11,7 @@ const ImgContainer = styled.div`
    }
    
   //  height: 25rem;
-   perspective-origin: bottom center;
+  //  perspective-origin: bottom center;
 `;
 const Img=styled.img`
 @media(min-width: 1000px){
