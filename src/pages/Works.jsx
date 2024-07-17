@@ -27,9 +27,9 @@ margin-right:1rem;
 const ImgRight=styled.img`
 @media(min-width: 1000px){
 margin-right:1rem;
-  transform:rotateX(-4deg) rotateY(-29deg) rotateZ(2deg) translateY(-2rem);
+  transform:rotateX(4deg) rotateY(-29deg) rotateZ(2deg) translateY(-2rem);
   &:hover{
- transform:rotateX(-4deg) rotateY(30deg) rotateZ(-2deg) translateX(.5rem) translateY(1.5rem);
+ transform:rotateX(4deg) rotateY(30deg) rotateZ(-2deg) translateX(.5rem) translateY(1.5rem);
   }
 }
 `
