@@ -98,7 +98,7 @@ export default function Navbar() {
   };
   return (
     <div
-      className={`left-${navTransform.navbarLeft} right-0 md:px-5 max-md:pr-5 h-${navTransform.height}  flex flex-row items-center  fixed top-${navTransform.top} justify-between z-[80] max-md:mb-5 max-md:border-b-4 max-md:bg-[#F1F3F5] ${navTransform.bg} duration-700 backdrop-blur-${navTransform.backdrop} ${navTransform.shadow}`}
+      className={`left-${navTransform.navbarLeft} right-0 md:px-5  h-${navTransform.height}  flex flex-row items-center  fixed top-${navTransform.top} justify-between z-[80] max-md:mb-5 max-md:border-b-4 max-md:bg-[#F1F3F5] ${navTransform.bg} duration-700 backdrop-blur-${navTransform.backdrop} ${navTransform.shadow}`}
       ref={navRef}>
       {!defNav && (
         <div className="w-10 bg-transparent h-16 absolute -translate-x-[3.75rem] overflow-hidden">
