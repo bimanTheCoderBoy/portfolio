@@ -13,7 +13,7 @@ export default function Intro() {
       </div>
       <div className="flex flex-row">
       <CursorEffect>
-        <div className="basis-[56%] flex flex-row justify-end font-kanit font-[700] text-6xl text-[#57585A] leading-[2.8rem] ">
+        <div className="basis-[56%] flex flex-row justify-end font-kanit font-[700] text-6xl text-[#57585A] leading-[2.8rem] max-md:translate-x-8">
           Biman
           <br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Das
@@ -23,7 +23,7 @@ export default function Intro() {
 
       <div className="flex flex-row">
       <CursorEffect>
-        <div className="basis-10/12 flex flex-row font-kanit font-[600]  text-lg justify-center text-[#6a6b6dca] leading-[2.5rem] ">
+        <div className="basis-10/12 flex flex-row font-kanit font-[600]  text-lg justify-center text-[#6a6b6dca] leading-[2.5rem] max-md:translate-x-8">
           Software Developer
         </div>
         </CursorEffect>

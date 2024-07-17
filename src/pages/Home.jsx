@@ -23,7 +23,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 export default function Home() {
   return (
     <>
-      <div className="text-black text-3xl w-full  flex flex-row">
+      <div className="text-black text-3xl w-full  flex flex-row max-md:mb-20">
         <div className="lg:basis-[40%] max-lg:basis-[100%]">
           <Intro />
         </div>
