@@ -59,7 +59,7 @@ export default function Navbar() {
  // nav change section end
 
   const menuHandler = (e) => {
-    console.log(e.target);
+    // console.log(e.target);
     navRef.current.classList.toggle("flex-col");
     menuRef.current.classList.toggle("max-md:hidden");
     menuRef.current.classList.toggle("justify-around");
@@ -71,8 +71,8 @@ export default function Navbar() {
   };
 
   const menuItemClickHandler = (e) => {
-
-    setMenuState((prev) => !prev);
+    menuHandler();
+    // setMenuState((prev) => !prev);
 
     let items = document.getElementsByClassName("menuu");
     // console.log(items);
