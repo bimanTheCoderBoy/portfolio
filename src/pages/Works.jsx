@@ -47,7 +47,7 @@ export default function Works() {
                 <ImgContainer>
                   <Img 
                     src={work}
-                    className="w-[32rem] lg:hover:w-[40rem] lg:shadow-c-img-card-gray lg:hover:shadow-c-img-card-gray-hover max-lg:shadow-c-img-card rounded-lg transition-all duration-[800ms] "
+                    className="w-[33.5rem] lg:hover:w-[40rem] lg:shadow-c-img-card-gray lg:hover:shadow-c-img-card-gray-hover max-lg:shadow-c-img-card rounded-lg transition-all duration-[800ms] "
                     alt="project pic"
                   />
                 

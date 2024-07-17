@@ -19,7 +19,7 @@ export default function Navbar() {
     top: 0,
     navbarLeft: 0,
     bg:"md:bg-[rgba(0,0,0,0)]",
-    shadow: "none",
+    shadow: "shadow-none",
     backdrop: "none",
     height:14,
     textColorDeep:"text-[#57585A]",
@@ -29,11 +29,12 @@ export default function Navbar() {
     top: 8,
     navbarLeft: 72,
     bg:"md:bg-[rgba(87,88,90,.7)]",
-    shadow: "xl",
+    shadow: 'lg:shadow-c-nav',
     backdrop: "sm",
     height:16,
     textColorDeep:"text-[#F1F3F5]",
-    textColorLight:"text-[#FFFF]" 
+    textColorLight:"text-[#FFFF]",
+    
   };
   const [defNav, setDefNav] = useState(true);
   const [navTransform, setNavTransform] = useState(navOneData);
@@ -45,6 +46,16 @@ export default function Navbar() {
       setNavTransform(navTwoData);
     }
   }, [defNav]);
+
+  document.addEventListener('scroll',()=>{
+    if(window.scrollY>25){
+      setDefNav(false)
+    }else{
+      setDefNav(true)
+    }
+  })
+
+ // nav change section end
 
   const menuHandler = (e) => {
     console.log(e.target);
@@ -65,11 +76,9 @@ export default function Navbar() {
       // ele.classList.remove("font-bold");
       items[i].classList.remove("scale-110");
       items[i].classList.remove("font-bold");
-      if(!defNav){
-      items[i].classList.remove("text-yellow-500");
-  
-      items[i].classList.add(navTransform.textColorLight);
-      }
+      // if(!defNav){
+    
+      // }
       console.log(items[i]);
     }
 
@@ -78,17 +87,14 @@ export default function Navbar() {
     if (e) {
       e.target.parentElement.classList.add("scale-110");
       e.target.parentElement.classList.add("font-bold");
-      if(!defNav){
-        e.target.parentElement.classList.add("text-yellow-500");
-        e.target.classList.add("text-yellow-500");
-        }
+    
     }
     // e.target.classList.add("scale-110");
     // e.target.classList.add("font-bold");
   };
   return (
     <div
-      className={`left-${navTransform.navbarLeft} right-0 md:px-5  h-${navTransform.height}  flex flex-row items-center  fixed top-${navTransform.top} justify-between z-50 max-md:mb-5 max-md:border-b-4 max-md:bg-[#F1F3F5] ${navTransform.bg}  backdrop-blur-${navTransform.backdrop} `}
+      className={`left-${navTransform.navbarLeft} right-0 md:px-5  h-${navTransform.height}  flex flex-row items-center  fixed top-${navTransform.top} justify-between z-50 max-md:mb-5 max-md:border-b-4 max-md:bg-[#F1F3F5] ${navTransform.bg} duration-700 backdrop-blur-${navTransform.backdrop} ${navTransform.shadow}`}
       ref={navRef}>
       {!defNav && (
         <div className="w-10 bg-transparent h-16 absolute -translate-x-[3.75rem] overflow-hidden">
@@ -103,7 +109,7 @@ export default function Navbar() {
               menuItemClickHandler(false);
             }}>
             <CursorEffect>
-              <img src={logo} alt="B/D" className=" scale-110 mx-5 mr-8  w-8" />
+              <img src={logo} alt="B/D" className=" scale-110 mx-5 mr-8  w-8  hover:scale-125  drop-shadow-lg" />
             </CursorEffect>
           </Link>
         </div>
@@ -136,8 +142,8 @@ export default function Navbar() {
             <span
               onClick={menuItemClickHandler}
               className="menuu  flex flex-row items-center mx-2 cursor-pointer hover:scale-110 hover:font-bold duration-200">
-              <MdOutlineWork className="scale-125 menuu" />
-              &nbsp;<span className={`${navTransform.textColorLight} menuu`}>Works/{">"}</span>
+              <MdOutlineWork className="scale-125 " />
+              &nbsp;<span className={`${navTransform.textColorLight} `}>Works/{">"}</span>
             </span>
           </CursorEffect>
         </Link>
