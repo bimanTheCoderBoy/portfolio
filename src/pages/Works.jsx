@@ -63,7 +63,7 @@ export default function Works() {
               return(
                 <div className="flex flex-row  p-8 mx-10 rounded-lg max-lg:flex-wrap max-lg:justify-center justify-center md:pr-[5rem] lg:mb-10">
                 
-                <div className="pl-12 pt-8 ">
+                <div className="md:pl-12 pt-8 ">
                   <h2 className="font-extrabold font-roboto text-3xl text-[#2e2e2e] drop-shadow-lg mb-7">
                     Dopefolio
                   </h2>
@@ -117,7 +117,7 @@ export default function Works() {
             }
             else{
               return(
-                <div className="flex flex-row  p-8 mx-10 rounded-lg max-lg:flex-wrap max-lg:justify-center justify-center md:pr-[5rem] lg:mb-10">
+                <div className="flex flex-row  p-8 md:mx-10 rounded-lg max-lg:flex-wrap max-lg:justify-center justify-center md:pr-[5rem] lg:mb-10">
                 <div className="flex flex-row justify-center items-center ">
                   <ImgContainer>
                     <ImgLeft
@@ -128,7 +128,7 @@ export default function Works() {
                   
                  </ImgContainer>
                 </div>
-                <div className="pl-12 pt-8 ">
+                <div className="md:pl-12 pt-8 ">
                   <h2 className="font-extrabold font-roboto text-3xl text-[#2e2e2e] drop-shadow-lg mb-7">
                     Dopefolio
                   </h2>
