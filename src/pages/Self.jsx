@@ -9,6 +9,7 @@ import nodeIcon from "../assets/node.png";
 import javaIcon from "../assets/java.png";
 import jsIcon from "../assets/js.png";
 import dsaIcon from "../assets/dsa.png";
+import CursorEffect from "../components/Cursor/CursorEffect";
 
 
 export default function Self() {
@@ -58,6 +59,7 @@ export default function Self() {
     // <div>
     <>
       <div className="flex flex-col w-full max-md:mt-5 mb-14 ">
+        <CursorEffect>
         <div className="w-full  flex flex-col justify-center items-center  relative md:right-10 ">
           <h2 className="text-7xl font-[600] font-playfr text-deepg flex items-center">
             {"<"}
@@ -66,6 +68,7 @@ export default function Self() {
             {">"}
           </h2>
         </div>
+        </CursorEffect>
 
         {/* //extra added absolute */}
         <div className="w-full h-full max-lg:hidden">

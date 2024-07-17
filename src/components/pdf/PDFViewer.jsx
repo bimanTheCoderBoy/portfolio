@@ -6,7 +6,7 @@ export default function PDFViewer() {
   useEffect(() => {
     CloudPdfViewer(
       {
-        documentId: "6b6772bb-4de7-4c57-9573-fbcd37f441fc",
+        documentId: "37d2c4df-0154-427c-b129-d3f31db36591",
         darkMode: false,
         disableToolbar:true
       },

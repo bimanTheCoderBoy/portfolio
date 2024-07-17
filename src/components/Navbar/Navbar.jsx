@@ -13,7 +13,7 @@ import CursorEffect from "../Cursor/CursorEffect";
 export default function Navbar() {
   const menuRef = useRef();
   const navRef = useRef();
-  const [menuState, setMenuState] = useState(false);
+  const [menuState, setMenuState] = useState(true);
   // nav change section
   const navOneData = {
     top: 0,
@@ -48,8 +48,8 @@ export default function Navbar() {
   }, [defNav]);
 
   document.addEventListener('scroll',()=>{
-    if(window.scrollY>25&&window.innerWidth>1000){
-      window.scrollTo=0
+    if(window.scrollY>25&&window.innerWidth>1200){
+      console.log(window.innerWidth)
       setDefNav(false)
     }else{
       setDefNav(true)
@@ -95,7 +95,7 @@ export default function Navbar() {
   };
   return (
     <div
-      className={`left-${navTransform.navbarLeft} right-0 md:px-5  h-${navTransform.height}  flex flex-row items-center  fixed top-${navTransform.top} justify-between z-50 max-md:mb-5 max-md:border-b-4 max-md:bg-[#F1F3F5] ${navTransform.bg} duration-700 backdrop-blur-${navTransform.backdrop} ${navTransform.shadow}`}
+      className={`left-${navTransform.navbarLeft} right-0 md:px-5  h-${navTransform.height}  flex flex-row items-center  fixed top-${navTransform.top} justify-between z-[80] max-md:mb-5 max-md:border-b-4 max-md:bg-[#F1F3F5] ${navTransform.bg} duration-700 backdrop-blur-${navTransform.backdrop} ${navTransform.shadow}`}
       ref={navRef}>
       {!defNav && (
         <div className="w-10 bg-transparent h-16 absolute -translate-x-[3.75rem] overflow-hidden">
@@ -110,12 +110,13 @@ export default function Navbar() {
               menuItemClickHandler(false);
             }}>
             <CursorEffect>
-              <img src={logo} alt="B/D" className=" scale-110 mx-5 mr-8  w-8  hover:scale-125  drop-shadow-lg" />
+              <img src={logo} alt="B/D" className=" scale-110 mx-5 mr-8  w-8  hover:scale-125  drop-shadow-lg " />
             </CursorEffect>
           </Link>
         </div>
 
         <div className={`cursor-pointer basis-1/4  ${navTransform.textColorDeep}  h-full flex  flex-row items-center font-sans font-semibold text-base p-4`}>
+        <CursorEffect>
           <Link to={"mailto:daskumarbiman2020@gmail.com"}>
             <span className="flex flex-row items-center">
               <IoIosMail className="scale-150 " />
@@ -125,6 +126,7 @@ export default function Navbar() {
               </span>
             </span>
           </Link>
+          </CursorEffect>
         </div>
 
         <div className="md:hidden flex flex-row items-center text-[#57585A] justify-end mx-5 basis-1/2 cursor-pointer">

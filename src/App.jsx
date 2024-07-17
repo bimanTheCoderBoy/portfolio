@@ -11,9 +11,10 @@ import CustomCursor from "./components/Cursor/CursorPointer";
 import { useState } from "react";
 import Loader from "./components/Loader";
 import Test from "./components/Test";
+import ScrollToTop from "./components/ScrollTop";
 
 function App() {
-  const [mainLoading, setMainLoading] = useState(false);
+  const [mainLoading, setMainLoading] = useState(true);
   setInterval(()=>{
     
     window.addEventListener("load",()=>setMainLoading(false))
@@ -35,6 +36,7 @@ function App() {
             <div className="md:basis-[7%]">
               <Social />
             </div>
+            <ScrollToTop/>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/self" element={<Self />} />

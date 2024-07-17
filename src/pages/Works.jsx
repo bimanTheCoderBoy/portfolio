@@ -3,6 +3,7 @@ import { Tilt } from "react-tilt";
 import { Link } from "react-router-dom";
 import work from "../assets/work01.png";
 import styled from "styled-components";
+import CursorEffect from "../components/Cursor/CursorEffect";
 
 const ImgContainer = styled.div`
    perspective: 800px;
@@ -42,12 +43,14 @@ export default function Works() {
     <>
       <div className="flex flex-col w-full  max-md:mt-10">
         <div className="w-full  h-32 flex flex-col justify-center items-center   relative md:right-10">
+          <CursorEffect>
           <h2 className="text-7xl font-[600] font-playfr text-deepg flex items-center">
             {"<"} 
             <span className="text-5xl font-kanit">Works</span>
             <span className="text-yellow-500">/</span>
             {">"}
           </h2>
+          </CursorEffect>
           <p className="text-center mt-6 text-lg text-deepg">
           Here you will find various personal and client projects,
           <br /> &nbsp; &nbsp;
@@ -56,7 +59,7 @@ export default function Works() {
         </div>
         <div className="w-full flex flex-col mt-16 justify-center ">
           {demo.map((ele,index)=>{
-            if(index%2==1 && window.innerWidth >= 1000){
+            if(index%2==1 && window.innerWidth > 1000){
               return(
                 <div className="flex flex-row  p-8 mx-10 rounded-lg max-lg:flex-wrap max-lg:justify-center justify-center md:pr-[5rem] lg:mb-10">
                 

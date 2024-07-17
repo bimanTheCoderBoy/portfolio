@@ -42,8 +42,9 @@ export default function Intro() {
       </div>
 
       <div className="flex flex-row justify-center mt-10">
+        <CursorEffect>
         <div className="w-28 h-28 rounded-full bg-yellow-200 flex flex-row justify-center items-center">
-          <Link to={"/"}>
+          <Link to={"https://wa.me/917076316977"} target="_blank">
             {" "}
             <div className=" w-20 h-20 rounded-full bg-yellow-500 flex flex-row justify-center items-center">
               <div className="basis-10/12 flex flex-row font-playfr font-[400]  text-lg justify-center text-white leading-[1.2rem] ">
@@ -54,6 +55,7 @@ export default function Intro() {
             </div>
           </Link>
         </div>
+        </CursorEffect>
       </div>
     </div>
   );
