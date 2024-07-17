@@ -32,7 +32,8 @@ export default {
          'c-img-card-gray': '-10px 40px 60px 10px #94a3b8',
         //  'c-img-card-gray-hover': '7px 18px 60px 10px #94a3b8',
         'c-img-card-gray-hover': '5px 20px 60px 12px #abb6c3e1',
-         'c-nav':'0 0px 20px 5px #cbd5e1'
+         'c-nav':'0 0px 20px 5px #cbd5e1',
+         'c-button' : '0px 0px 40px 4px #57585A',
       }
     },
   },

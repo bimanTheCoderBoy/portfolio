@@ -88,9 +88,9 @@ export default function Works() {
                   </div>
                 </div>
                 <Link to={"#"}>
-                  <div className="w-48 h-14 hover:-translate-y-2 bg-[#2e2e2e] text-zinc-200 flex justify-center items-center mt-6 rounded-md  shadow-lg shadow-slate-400 text-xl font-[600] font-roboto tracking-wide duration-200">
+                  <div className="w-44 h-14 hover:-translate-y-2 hover:shadow-c-button bg-[#2e2e2e] text-zinc-200 flex justify-center items-center mt-6 rounded-md  shadow-lg shadow-slate-400 text-xl font-[600] font-roboto tracking-wide duration-200">
                     {" "}
-                    <span className="drop-shadow-lg ">Take a look {'→'}</span>
+                    <span className="drop-shadow-lg ">Take a look &nbsp;{'→'}</span>
                   </div>
                 </Link>
               </div>
