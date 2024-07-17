@@ -35,7 +35,9 @@ export default function Self() {
 
     achievements(){
         return [
-            'Selected for College level E-commerce Business Project' , 'Solved 500+ coding problems in different coding platforms' , 'Best UI Award in Hackathon'
+            'Selected for College level E-commerce Business Project',
+            'Solved 500+ coding problems in different coding platforms',
+            'Best UI Award in Hackathon'
         ]
     }
 
@@ -55,7 +57,7 @@ export default function Self() {
   return (
     // <div>
     <>
-      <div className="flex flex-col w-full max-md:mt-5 mb-14">
+      <div className="flex flex-col w-full max-md:mt-5 mb-14 ">
         <div className="w-full  flex flex-col justify-center items-center  relative md:right-10 ">
           <h2 className="text-7xl font-[600] font-playfr text-deepg flex items-center">
             {"<"}
@@ -68,11 +70,11 @@ export default function Self() {
         {/* //extra added absolute */}
         <div className="w-full h-full max-lg:hidden">
           <img src={mongoIcon} alt=""  className="w-[18%] absolute top-[7%] left-[70%]"/>
-          <img src={reactIcon} alt=""  className="w-[18%] absolute bottom-[-40%] left-[72%]"/>
-          <img src={nodeIcon} alt=""  className="w-[18%] absolute top-[82%] left-[42%]"/>
+          <img src={reactIcon} alt=""  className="w-[18%] absolute bottom-[-60%] left-[72%]"/>
+          <img src={nodeIcon} alt=""  className="w-[18%] absolute top-[100%] left-[30%]"/>
         </div >
         
-        <div className=" bg-[rgba(0,0,0,.05)] lg:mx-8 rounded-lg backdrop-blur-sm mx-5 mt-2 mb-10">
+        <div className=" bg-[rgba(0,0,0,.05)] lg:-translate-x-4 rounded-lg backdrop-blur-[8px] mx-5 mt-2 mb-10 ">
         <SyntaxHighlighter
           language="javascript"
           style={test}
@@ -86,8 +88,8 @@ export default function Self() {
             // width:"100vw"
           }}
           showLineNumbers={true}
-          // wrapLongLines={true}
-          // wrapLines={true}
+          wrapLongLines={true}
+          wrapLines={true}
           codeTagProps={{
             backgroundColor: "black",
             width: "100px",

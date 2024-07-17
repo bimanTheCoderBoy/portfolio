@@ -5,7 +5,7 @@ export default function CursorEffect(props) {
     const {setIsHovered } = useContext(CursorContext)
 
   return (
-    <div onMouseEnter={()=>{setIsHovered(12)}} onMouseLeave={()=>{setIsHovered(8)}} >
+    <div onMouseEnter={()=>{setIsHovered(24)}} onMouseLeave={()=>{setIsHovered(8)}} >
       {props.children}
     </div>
   )
