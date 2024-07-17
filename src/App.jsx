@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <CustomCursor className="max-md:hidden"/>
+      <CustomCursor/>
       {mainLoading ? (
         <Loader />
       ) : (
