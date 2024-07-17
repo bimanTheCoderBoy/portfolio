@@ -38,7 +38,8 @@ export default function Works() {
           </h2>
           <p className="text-center mt-6 text-lg text-deepg">
           Here you will find various personal and client projects,
-                 each with its own detailed case study.
+          <br /> &nbsp; &nbsp;
+          each with its own detailed case study.
           </p>
         </div>
         <div className="w-full flex flex-col mt-16 justify-center ">
@@ -89,7 +90,7 @@ export default function Works() {
                 <Link to={"#"}>
                   <div className="w-48 h-14 hover:-translate-y-2 bg-[#2e2e2e] text-zinc-200 flex justify-center items-center mt-6 rounded-md  shadow-lg shadow-slate-400 text-xl font-[600] font-roboto tracking-wide duration-200">
                     {" "}
-                    <span className="drop-shadow-lg ">Take a look</span>
+                    <span className="drop-shadow-lg ">Take a look {'→'}</span>
                   </div>
                 </Link>
               </div>
