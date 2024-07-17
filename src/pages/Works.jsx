@@ -11,7 +11,7 @@ const ImgContainer = styled.div`
    }
    
   //  height: 25rem;
-  //  perspective-origin: left center;
+   perspective-origin: left center;
 `;
 const Img=styled.img`
 @media(min-width: 1000px){
@@ -47,7 +47,7 @@ export default function Works() {
                 <ImgContainer>
                   <Img 
                     src={work}
-                    className="w-[32rem] lg:hover:w-[40rem] lg:shadow-c-img-card-gray lg:hover:shadow-c-img-card-gray-hover max-lg:shadow-c-img-card rounded-lg transition-all duration-500 "
+                    className="w-[32rem] lg:hover:w-[40rem] lg:shadow-c-img-card-gray lg:hover:shadow-c-img-card-gray-hover max-lg:shadow-c-img-card rounded-lg transition-all duration-800 "
                     alt="project pic"
                   />
                 
