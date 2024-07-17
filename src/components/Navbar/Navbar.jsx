@@ -71,6 +71,9 @@ export default function Navbar() {
   };
 
   const menuItemClickHandler = (e) => {
+
+    setMenuState((prev) => !prev);
+
     let items = document.getElementsByClassName("menuu");
     // console.log(items);
     for (let i = 0; i < items.length; i++) {

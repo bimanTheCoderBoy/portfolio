@@ -41,7 +41,7 @@ const demo=[1,1,1,4,5];
 export default function Works() {
   return (
     <>
-      <div className="flex flex-col w-full  max-md:mt-10">
+      <div className="flex flex-col w-full  max-md:mt-10 max-md:mb-10">
         <div className="w-full  h-32 flex flex-col justify-center items-center   relative md:right-10">
           <CursorEffect>
           <h2 className="text-7xl font-[600] font-playfr text-deepg flex items-center">
