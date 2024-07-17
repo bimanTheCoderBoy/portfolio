@@ -116,7 +116,7 @@ export default function Home() {
             <Draggable>
               <img
                 src={javaIcon}
-                className={`w-16 absolute right-[43%] top-[-3rem] -rotate-6 hover:drop-shadow-c-gray duration-200 cursor-pointer`}
+                className={`w-16 absolute right-[45%] top-[-3rem] -rotate-6 hover:drop-shadow-c-gray duration-200 cursor-pointer`}
                 onDoubleClick={() => {
                   window
                     .open("https://www.w3schools.com/java/", "_blank")
