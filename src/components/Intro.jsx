@@ -5,7 +5,7 @@ import CursorEffect from "../components/Cursor/CursorEffect"
 
 export default function Intro() {
   return (
-    <div className="">
+    <div className="max-md:-translate-y-4">
         <div className="flex flex-row">
       <div className=" mt-10 mb-4 flex flex-row justify-end basis-[38%]">
         <img src={intro} alt="" className="w-32" />
