@@ -29,7 +29,8 @@ export default {
         'c-gray': '0 0px 30px #6a6b6dca',
          'c-img-card': '0 0px 0px 10px #94a3b8',
          'c-img-card-gray': '-7px 33px 60px 10px #94a3b8',
-         'c-img-card-gray-hover': '7px 18px 60px 10px #94a3b8',
+        //  'c-img-card-gray-hover': '7px 18px 60px 10px #94a3b8',
+        'c-img-card-gray-hover': '5px 10px 60px 10px #94a3b8',
          'c-nav':'0 0px 20px 5px #cbd5e1'
       }
     },
