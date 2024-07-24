@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Personal Website",
+      "description": "A step-by-step guide to building your own personal website. Learn the basics of machine learning and how to get started. Learn the basics of machine learning and how to get started.",
+      "link": "https://bimanthecoderboy.netlify.app",
+      "pic": "/images/work/portfolio.png",
+      "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Introduction",
+      "description": "Learn the basics of machine learning and how to get started. Learn the basics of machine learning and how to get started. Learn the basics of machine learning and how to get started.",
+      "link": "https://bimanthecoderboy.netlify.app",
+      "pic": "/images/work/buddha.jpeg",
+      "tools": ["Python", "Scikit-learn", "Pandas"]
+    }
+  ]
+  
