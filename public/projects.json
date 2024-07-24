@@ -22,14 +22,14 @@
     },
     {
       "title": "Chemia Galaxy",
-      "description": "I developed an Android app for Teachers to send notes and take quizzes, managinng monthly fees.This was an Client project that have to part Teacher App and Student app ans this is the First one. This project demonstrates my mobile app development skills and focus on educational technology.",
+      "description": "I developed this Android app for Teachers to send notes and take quizzes, managinng monthly fees.This was an Client project that have to part Teacher App and Student app ans this is the First one. This project demonstrates my mobile app development skills and focus on educational technology.",
       "link": "https://github.com/bimanTheCoderBoy/Batch-Manager",
       "pic": "/images/work/work04.png",
       "tools": ["FLUTTER","FIREBASE"]
     },
     {
       "title": "Chemia Students",
-      "description": "I developed an Android app for Students notes, quizes, fees. This was the student part of the above mentioned app. This project also demonstrates my mobile app development skills and focus on educational technology.",
+      "description": "I developed this Android app for Students notes, quizes, fees. This was the student part of the above mentioned app. This project also demonstrates my mobile app development skills and focus on educational technology.",
       "link": "https://github.com/bimanTheCoderBoy/cstudents",
       "pic": "/images/work/work05.png",
       "tools": ["FLUTTER","FIREBASE"]
