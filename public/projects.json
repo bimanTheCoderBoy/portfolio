@@ -7,20 +7,6 @@
       "tools": ["REACT", "TAILWIND", "NPM Tools"]
     },
     {
-      "title": "College conference",
-      "description": "I collaborated with my college team to develop an international conference website, providing event details, registration, and schedule. The site showcases my skills in teamwork and web development.",
-      "link": "https://icicsa.netlify.app/",
-      "pic": "/images/work/work02.png",
-      "tools": ["HTML", "CSS", "JS","REACT"]
-    },
-    {
-      "title": "Noteman",
-      "description":"I developed an advanced to-do app featuring daily tasks, important task prioritization, and task completion tracking, all integrated with login functionality with browser storages. It showcases my skills in front-end development also",
-      "link": "https://bimanthecoderboy.github.io/noteMan/",
-      "pic": "/images/work/work03.png",
-      "tools": ["HTML", "CSS", "JS"]
-    },
-    {
       "title": "Chemia Galaxy",
       "description": "I developed this Android app for Teachers to send notes and take quizzes, managinng monthly fees.This was an Client project that have to part Teacher App and Student app ans this is the First one. This project demonstrates my mobile app development skills and focus on educational technology.",
       "link": "https://github.com/bimanTheCoderBoy/Batch-Manager",
@@ -34,4 +20,19 @@
       "pic": "/images/work/work05.png",
       "tools": ["FLUTTER","FIREBASE"]
     }
+    ,
+    {
+      "title": "College conference",
+      "description": "I collaborated with my college team to develop an international conference website, providing event details, registration, and schedule. The site showcases my skills in teamwork and web development.",
+      "link": "https://icicsa.netlify.app/",
+      "pic": "/images/work/work02.png",
+      "tools": ["HTML", "CSS", "JS","REACT"]
+    },
+    {
+        "title": "Noteman",
+        "description":"I developed an advanced to-do app featuring daily tasks, important task prioritization, and task completion tracking, all integrated with login functionality with browser storages. It showcases my skills in front-end development also",
+        "link": "https://bimanthecoderboy.github.io/noteMan/",
+        "pic": "/images/work/work03.png",
+        "tools": ["HTML", "CSS", "JS"]
+      }
   ]
