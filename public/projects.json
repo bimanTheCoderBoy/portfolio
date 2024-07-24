@@ -1,17 +1,37 @@
 [
     {
-      "title": "Personal Website",
-      "description": "A step-by-step guide to building your own personal website. Learn the basics of machine learning and how to get started. Learn the basics of machine learning and how to get started.",
+      "title": "Portfolio",
+      "description": "This my portfolio website built with React, featuring a clean and responsive design. It highlights my projects, skills, and achievements as a full stack developer, demonstrating my proficiency in modern web technologies and user-friendly interfaces.",
       "link": "https://bimanthecoderboy.netlify.app",
       "pic": "/images/work/work01.png",
-      "tools": ["HTML", "CSS", "JavaScript"]
+      "tools": ["REACT", "TAILWIND", "NPM Tools"]
     },
     {
-      "title": "Introduction",
-      "description": "Learn the basics of machine learning and how to get started. Learn the basics of machine learning and how to get started. Learn the basics of machine learning and how to get started.",
-      "link": "https://bimanthecoderboy.netlify.app",
-      "pic": "/images/work/work02.jpeg",
-      "tools": ["Python", "Scikit-learn", "Pandas"]
+      "title": "College conference",
+      "description": "I collaborated with my college team to develop an international conference website, providing event details, registration, and schedule. The site showcases my skills in teamwork and web development.",
+      "link": "https://icicsa.netlify.app/",
+      "pic": "/images/work/work02.png",
+      "tools": ["HTML", "CSS", "JS","REACT"]
+    },
+    {
+      "title": "Noteman",
+      "description":"I developed an advanced to-do app featuring daily tasks, important task prioritization, and task completion tracking, all integrated with login functionality with browser storages. It showcases my skills in front-end development also",
+      "link": "https://bimanthecoderboy.github.io/noteMan/",
+      "pic": "/images/work/work03.png",
+      "tools": ["HTML", "CSS", "JS"]
+    },
+    {
+      "title": "Chemia Galaxy",
+      "description": "I developed an Android app for Teachers to send notes and take quizzes, managinng monthly fees.This was an Client project that have to part Teacher App and Student app ans this is the First one. This project demonstrates my mobile app development skills and focus on educational technology.",
+      "link": "https://github.com/bimanTheCoderBoy/Batch-Manager",
+      "pic": "/images/work/work04.png",
+      "tools": ["FLUTTER","FIREBASE"]
+    },
+    {
+      "title": "Chemia Students",
+      "description": "I developed an Android app for Students notes, quizes, fees. This was the student part of the above mentioned app. This project also demonstrates my mobile app development skills and focus on educational technology.",
+      "link": "https://github.com/bimanTheCoderBoy/cstudents",
+      "pic": "/images/work/work05.png",
+      "tools": ["FLUTTER","FIREBASE"]
     }
   ]
-  

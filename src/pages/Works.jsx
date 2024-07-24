@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import { Tilt } from "react-tilt";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -87,7 +87,7 @@ export default function Works() {
                     <div className="w-full flex flex-row flex-wrap max-w-[28rem] border-l-2 border-gray-400 items-center">
                       {project.tools.map((tool, i) => {
                           return (
-                            <span className="p-1  rounded-sm h-7 shadow-md font-lato text-center  bg-zinc-200 font-[600] m-2 text-lightg text-sm">
+                            <span className="p-1  rounded-sm h-7 shadow-md font-lato text-center  bg-zinc-200 font-[600] m-2 text-lightg text-sm flex">
                               <p className="text-[70%]">{"</>"}</p>
                               {tool}
                             </span>
@@ -96,7 +96,7 @@ export default function Works() {
                     </div>
 
                   </div>
-                  <Link to={"#"}>
+                  <Link to={project.link} target="_blank">
                     <div className="w-44 h-14 hover:-translate-y-2 hover:shadow-c-button bg-[#2e2e2e] text-zinc-200 flex justify-center items-center mt-6 rounded-md  shadow-lg shadow-slate-400 text-xl font-[600] font-roboto tracking-wide duration-200">
                       {" "}
                       <span className="drop-shadow-lg ">Take a look &nbsp;{'→'}</span>
@@ -144,7 +144,7 @@ export default function Works() {
                     <div className="w-full flex flex-row flex-wrap max-w-[28rem] border-l-2 border-gray-400 items-center">
                       {project.tools.map((tool, i) => {
                           return (
-                            <span className="p-1  rounded-sm h-7 shadow-md font-lato text-center  bg-zinc-200 font-[600] m-2 text-lightg text-sm">
+                            <span className="p-1  rounded-sm h-7 shadow-md font-lato text-center  bg-zinc-200 font-[600] m-2 text-lightg text-sm flex">
                               <p className="text-[70%]">{"</>"}</p>
                               {tool}
                             </span>
@@ -153,7 +153,7 @@ export default function Works() {
                     </div>
 
                   </div>
-                  <Link to={"#"}>
+                  <Link to={project.link} target="_blank">
                     <div className="w-44 h-14 hover:-translate-y-2 hover:shadow-c-button bg-[#2e2e2e] text-zinc-200 flex justify-center items-center mt-6 rounded-md  shadow-lg shadow-slate-400 text-xl font-[600] font-roboto tracking-wide duration-200">
                       {" "}
                       <span className="drop-shadow-lg ">Take a look &nbsp;{'→'}</span>
