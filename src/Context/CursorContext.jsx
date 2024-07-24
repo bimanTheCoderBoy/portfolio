@@ -7,7 +7,7 @@ export const CursorProvider = ({ children }) => {
   const [hoveredValue, setIsHovered] = useState(8);
 
   return (
-    <CursorContext.Provider value={{ hoveredValue, setIsHovered }}>
+    <CursorContext.Provider value={{ hoveredValue, setIsHovered }}  >
       {children}
     </CursorContext.Provider>
   );
